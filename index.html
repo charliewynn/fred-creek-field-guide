@@ -5,6 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Fred Creek Field Guide — a backyard field guide for young naturalists</title>
 <meta name="description" content="A simple field guide to the trees, invader plants, mushrooms and animal signs of the Fred Creek woods in Tulsa, Oklahoma — written for young naturalists and their grown-ups.">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#38512f">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
 <style>
   :root{
     --cream:#faf6ec; --paper:#fffdf7; --ink:#33302a; --soft:#6b6455;
@@ -402,5 +406,12 @@
   <p>This guide is for looking and learning. Never eat any wild plant, berry or mushroom based on a field guide — some look-alikes are dangerous.</p>
 </footer>
 
+<script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("sw.js").catch(() => {});
+  });
+}
+</script>
 </body>
 </html>

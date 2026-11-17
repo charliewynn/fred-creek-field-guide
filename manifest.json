@@ -1,0 +1,16 @@
+{
+  "name": "Fred Creek Field Guide",
+  "short_name": "Fred Creek",
+  "description": "A backyard field guide for young naturalists — trees, invasives, mushrooms and animal signs of the Fred Creek woods in Tulsa, Oklahoma.",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#faf6ec",
+  "theme_color": "#38512f",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
