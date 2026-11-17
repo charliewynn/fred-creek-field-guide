@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fred Creek Field Guide — a backyard field guide for young naturalists</title>
+<meta name="description" content="A simple field guide to the trees, invader plants, mushrooms and animal signs of the Fred Creek woods in Tulsa, Oklahoma — written for young naturalists and their grown-ups.">
+<style>
+  :root{
+    --cream:#faf6ec; --paper:#fffdf7; --ink:#33302a; --soft:#6b6455;
+    --green:#4a6741; --green-dark:#38512f; --brown:#8a6d4b;
+    --pull:#9c4a1f; --pull-bg:#fdf0e6; --note-bg:#f1ecdd;
+    --line:#e4dcc8; --radius:18px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--cream);color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    line-height:1.5;-webkit-text-size-adjust:100%}
+  header.top{padding:2.2rem 1.1rem 1.2rem;text-align:center}
+  header.top h1{font-size:2.1rem;line-height:1.15;margin:.2rem 0 .4rem;color:var(--green-dark)}
+  header.top p{margin:.2rem auto;max-width:34rem;color:var(--soft);font-size:1.05rem}
+  header.top .leaf{font-size:2rem}
+  nav.jump{position:sticky;top:0;z-index:10;background:var(--cream);
+    border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+    display:flex;gap:.4rem;overflow-x:auto;padding:.5rem .6rem;-webkit-overflow-scrolling:touch}
+  nav.jump a{flex:0 0 auto;display:inline-flex;align-items:center;min-height:48px;
+    padding:.45rem .95rem;border-radius:999px;background:var(--paper);
+    border:1.5px solid var(--green);color:var(--green-dark);
+    text-decoration:none;font-weight:600;font-size:1rem}
+  nav.jump a:active{background:var(--green);color:#fff}
+  main{max-width:44rem;margin:0 auto;padding:0 .9rem 2.5rem}
+  section{padding-top:1.6rem;scroll-margin-top:4.6rem}
+  h2.group{font-size:1.55rem;color:var(--green-dark);margin:.4rem 0 .2rem}
+  h2.group.pull{color:var(--pull)}
+  p.group-sub{color:var(--soft);margin:.1rem 0 1rem;font-size:1rem}
+  .card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);
+    padding:1rem;margin:0 0 1.1rem;box-shadow:0 1px 3px rgba(60,50,30,.06)}
+  .card img{width:100%;height:auto;border-radius:12px;display:block}
+  .card img + img{margin-top:.6rem}
+  .card h3{font-size:1.5rem;margin:.8rem 0 .15rem;color:var(--ink)}
+  .card .latin{color:var(--soft);font-style:italic;font-size:.95rem;margin:0 0 .5rem}
+  .kid{font-size:1.3rem;line-height:1.45;margin:.4rem 0 .6rem}
+  .fall{display:inline-block;background:#f6e8c8;color:#6d5518;border-radius:10px;
+    padding:.4rem .7rem;font-size:1rem;margin:.1rem 0 .7rem}
+  .notes{background:var(--note-bg);border-radius:12px;padding:.7rem .85rem;font-size:.98rem}
+  .notes strong{display:block;font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;
+    color:var(--brown);margin-bottom:.25rem}
+  .notes p{margin:0}
+  .card.pullit{border-color:#eccdb4}
+  .badge{display:inline-block;font-weight:700;font-size:.85rem;border-radius:999px;
+    padding:.2rem .7rem;margin-top:.7rem}
+  .badge.keep{background:#e3edda;color:var(--green-dark)}
+  .badge.pull{background:var(--pull-bg);color:var(--pull)}
+  .badge.guest{background:#ece7da;color:var(--soft)}
+  .rule-card{background:var(--paper);border:1.5px solid var(--green);border-radius:var(--radius);
+    padding:1rem 1.1rem;margin:0 0 .9rem}
+  .rule-card .big{font-size:1.3rem;font-weight:700;margin:0 0 .2rem;color:var(--green-dark)}
+  .rule-card p{margin:0;font-size:1.05rem}
+  .intro{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);
+    padding:1rem 1.1rem;margin-top:1.2rem;font-size:1.05rem}
+  .intro p{margin:.3rem 0}
+  footer{max-width:44rem;margin:0 auto;padding:0 .9rem 2.5rem;color:var(--soft);font-size:.85rem}
+  footer p{margin:.3rem 0}
+  @media (min-width:640px){
+    header.top h1{font-size:2.6rem}
+    .kid{font-size:1.4rem}
+  }
+  @media print{
+    nav.jump{display:none}
+    body{background:#fff}
+    .card,.rule-card,.intro{box-shadow:none;break-inside:avoid}
+  }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="leaf" aria-hidden="true">🍂</div>
+  <h1>Fred Creek Field Guide</h1>
+  <p><strong>A backyard field guide for young naturalists</strong></p>
+  <p>The trees, plants, mushrooms and animal neighbours of a creek-side woods in Tulsa, Oklahoma — big pictures and simple words for kids, with notes for grown-ups.</p>
+</header>
+
+<nav class="jump" aria-label="Jump to a section">
+  <a href="#keepers">🌳 Keeper Trees</a>
+  <a href="#pull">🧤 Pull It!</a>
+  <a href="#mushrooms">🍄 Mushrooms</a>
+  <a href="#animals">🐾 Animal Signs</a>
+  <a href="#rules">🥾 Trail Rules</a>
+</nav>
+
+<main>
+
+<div class="intro">
+  <p><strong>How to use this guide:</strong> take it on a walk! The big words on each page are for young naturalists. The <em>Grown-up notes</em> underneath have the identifying details, safety notes and ecology.</p>
+  <p>The woods in this guide run along Fred Creek in Tulsa — about 17 acres of creek-bottom forest. Most of the plant photos were taken right there in the fall of 2026.</p>
+</div>
+
+<!-- ================= KEEPER TREES ================= -->
+<section id="keepers">
+  <h2 class="group">🌳 Keeper Trees</h2>
+  <p class="group-sub">Good native trees. These stay — we walk around them, not through them.</p>
+
+  <article class="card">
+    <img src="assets/persimmon.jpg" alt="American persimmon tree with small orange fruit and dark chunky bark" loading="lazy">
+    <span class="badge keep">Keeper</span>
+    <h3>American Persimmon</h3>
+    <p class="latin">Diospyros virginiana</p>
+    <p class="kid">Little orange fruits on a tree with alligator bark. Wait until the fruit is squishy-soft — then it's sweet!</p>
+    <p class="fall">🍂 Fall: look for fallen fruit on the ground under the tree.</p>
+    <div class="notes"><strong>Grown-up notes</strong>
+      <p>Bark is dark and broken into chunky square blocks — "alligator hide." Fruit is only 1–2 inches (much smaller than grocery-store persimmons) and mouth-puckering until completely soft. One of the best wildlife food trees in these woods: the raccoon sign found on the trail (see Animal Signs) was packed with persimmon seeds from a tree nearby.</p>
+    </div>
+  </article>
+
+  <article class="card">
+    <img src="assets/black-cherry.jpg" alt="Glossy black cherry leaves, still deep green in mid-November" loading="lazy">
+    <span class="badge keep">Keeper</span>
+    <h3>Black Cherry</h3>
+    <p class="latin">Prunus serotina</p>
+    <p class="kid">Shiny leaves with tiny teeth, like a little saw. This tree holds onto its green leaves for a long, long time.</p>
+    <p class="fall">🍂 Fall: still deep green in mid-November, when most leaves have turned.</p>
+    <div class="notes"><strong>Grown-up notes</strong>
+      <p>Glossy, lance-shaped leaves with fine teeth and long pointed tips. A top-tier wildlife tree — birds and mammals eat the small black cherries — and a valuable native hardwood. Photo taken in these woods, November 2026.</p>
+    </div>
+  </article>
+
+  <article class="card">
+    <img src="assets/slippery-elm.jpg" alt="Slippery elm leaf — big, oval, doubly toothed, with a lopsided base" loading="lazy">
+    <span class="badge keep">Keeper</span>
+    <h3>Slippery Elm</h3>
+    <p class="latin">Ulmus rubra</p>
+    <p class="kid">Rub a leaf between your fingers. Sandpaper! Rough on top <em>and</em> underneath.</p>
+    <p class="fall">🍂 Fall: leaves turn a plain, quiet yellow.</p>
+    <div class="notes"><strong>Grown-up notes</strong>
+      <p>Big oval leaf, doubly serrated edge, lopsided base, strong parallel veins, fuzzy twig. The field check: slippery elm feels rough on <strong>both</strong> sides — American elm is much smoother underneath (confirmed by hand in these woods). Oddly, the "slippery" in the name is the inner bark, which makes a slick gel — not the leaves. Photo taken in these woods, November 2026.</p>
+    </div>
+  </article>
+
+  <article class="card">
+    <img src="assets/black-gum.jpg" alt="A fallen black gum leaf — smooth-edged, widest above the middle" loading="lazy">
+    <span class="badge keep">Keeper</span>
+    <h3>Black Gum</h3>
+    <p class="latin">Nyssa sylvatica</p>
+    <p class="kid">The first tree to turn red in the fall — like a stop sign in the woods!</p>
+    <p class="fall">🍂 Fall: brilliant scarlet, earlier than almost everything else.</p>
+    <div class="notes"><strong>Grown-up notes</strong>
+      <p>Leaves have smooth (untoothed) edges, are widest above the middle, and cluster in tufts at the twig tips. A slow-growing creek-bottom specialist — a mid-sized black gum has been growing for many years — with top-tier fall colour and good wildlife fruit. When a trail had to choose between a young black gum and a young elm here, the black gum stayed: elms regrow fast and are everywhere in this corridor; black gum is the scarcer tree. Photo: one of its fallen leaves, November 2026.</p>
+    </div>
+  </article>
+
+  <article class="card">
+    <img src="assets/green-ash.jpg" alt="Green ash compound leaf — five leaflets on one stem, yellowing in fall" loading="lazy">
+    <span class="badge keep">Keeper</span>
+    <h3>Green Ash</h3>
+    <p class="latin">Fraxinus pennsylvanica</p>
+    <p class="kid">One stem with lots of little leaves — like a green feather!</p>
+    <p class="fall">🍂 Fall: the whole feather turns yellow.</p>
+    <div class="notes"><strong>Grown-up notes</strong>
+      <p>A pinnately compound leaf: five leaflets on one stalk, the end leaflet biggest and widest above its middle. Branches grow opposite each other — ash is one of the few opposite-branched trees. <strong>Caveat:</strong> the emerald ash borer is established in Oklahoma and green ash is its favourite food, so any ash is a borrowed-time tree. Enjoy it, but don't plan a trail around its shade. Photo taken in these woods, November 2026.</p>
+    </div>
+  </article>
+
+  <article class="card">
+    <img src="assets/cherry-laurel.jpg" alt="Carolina cherry laurel leaf — broad, thick and glossy green" loading="lazy">
+    <span class="badge guest">Yard guest</span>
+    <h3>Carolina Cherry Laurel</h3>
+    <p class="latin">Prunus caroliniana</p>
+    <p class="kid">A shiny leaf that stays green all winter long — even when the other trees are bare and sleeping.</p>
+    <p class="fall">🍂 Fall &amp; winter: still glossy green. That's the giveaway.</p>
+    <div class="notes"><strong>Grown-up notes</strong>
+      <p>Not a deep-woods native but a yard escape: cherry laurel is planted widely as a screening shrub, birds eat the black fruit, and seeds land in woods like these. Thick, leathery, evergreen leaves separate it from its look-alike, black cherry — if it's still wearing green leaves in January, it's the laurel. A fine screen plant, but not a keeper priority; if one stands in the trail tread, cutting it costs little. Photo taken in these woods, November 2026.</p>
+    </div>
+  </article>
+</section>
+
+<!-- ================= PULL IT ================= -->
+<section id="pull">
+  <h2 class="group pull">🧤 Invasive Plants — Pull It!</h2>
+  <p class="group-sub">These plants pushed in from gardens and crowd out the native woods. Grown-ups pull or snip these on sight. Kids can help spot them!</p>
+
+  <article class="card pullit">
+    <img src="assets/privet.jpg" alt="Chinese privet — oval leaves in pairs and clusters of dark blue-black berries" loading="lazy">
+    <span class="badge pull">Pull it</span>
+    <h3>Chinese Privet</h3>
+    <p class="latin">Ligustrum sinense</p>
+    <p class="kid">Dark blue-black berries in bunches. This is the biggest bully plant in the woods — when you spot it, tell a grown-up!</p>
+    <p class="fall">🍂 Fall: berry bunches everywhere. Still green when winter comes, too.</p>
+    <div class="notes"><strong>Grown-up notes</strong>
+      <p>The #1 woodland invader in Oklahoma. A semi-evergreen shrub with small oval leaves in opposite pairs; it loves creek bottoms exactly like this one. Field shortcut: if a shrub down here is still fully green in December, it's probably privet. This is the one to focus on if you only hunt one species.</p>
+    </div>
+  </article>
+
+  <article class="card pullit">
+    <img src="assets/amur-honeysuckle.jpg" alt="Amur bush honeysuckle with paired red berries" loading="lazy">
+    <span class="badge pull">Pull it</span>
+    <h3>Amur Bush Honeysuckle</h3>
+    <p class="latin">Lonicera maackii</p>
+    <p class="kid">Red berries in pairs, two by two. Another bully — it makes too much shade for the little plants underneath.</p>
+    <p class="fall">🍂 Fall: paired glossy red berries — and it's still green after the native shrubs drop their leaves.</p>
+    <div class="notes"><strong>Grown-up notes</strong>
+      <p>Big arching shrub with hollow stems. It leafs out earlier in spring and holds its leaves later in fall than any native shrub, shading out everything beneath it. That late-season green is the easiest tell this month.</p>
+    </div>
+  </article>
+
+  <article class="card pullit">
+    <img src="assets/japanese-honeysuckle.jpg" alt="Japanese honeysuckle vine with white and yellow flowers" loading="lazy">
+    <span class="badge pull">Pull it</span>
+    <h3>Japanese Honeysuckle</h3>
+    <p class="latin">Lonicera japonica</p>
+    <p class="kid">A climbing vine that hugs trees too tight and creeps along the ground. Snip it, vine!</p>
+    <p class="fall">🍂 Fall: black berries. Winter: its leaves stay half-green when the woods are brown.</p>
+    <div class="notes"><strong>Grown-up notes</strong>
+      <p>The vine version of the honeysuckle problem — it twines up saplings and carpets the ground. White-to-yellow tubular flowers in summer. Semi-evergreen, so winter is when it stands out against the bare woods.</p>
+    </div>
+  </article>
+
+  <article class="card pullit">
+    <img src="assets/wintercreeper.jpg" alt="Wintercreeper — glossy evergreen groundcover leaves" loading="lazy">
+    <span class="badge pull">Pull it</span>
+    <h3>Wintercreeper</h3>
+    <p class="latin">Euonymus fortunei</p>
+    <p class="kid">A shiny green carpet on the ground that climbs up trees. It sneaked out of somebody's garden!</p>
+    <p class="fall">🍂 Fall &amp; winter: stays glossy green while everything around it sleeps.</p>
+    <div class="notes"><strong>Grown-up notes</strong>
+      <p>Evergreen groundcover mat that also climbs trunks with little rootlets. It escapes from yard plantings, so check the woods' edges nearest the houses first.</p>
+    </div>
+  </article>
+
+  <article class="card pullit">
+    <img src="assets/english-ivy.webp" alt="English ivy — three-lobed evergreen leaves climbing" loading="lazy">
+    <span class="badge pull">Pull it</span>
+    <h3>English Ivy</h3>
+    <p class="latin">Hedera helix</p>
+    <p class="kid">Leaves with three pointy parts, climbing up, up, up the trees. Too heavy, ivy!</p>
+    <p class="fall">🍂 Fall &amp; winter: evergreen — easy to spot on bare trunks.</p>
+    <div class="notes"><strong>Grown-up notes</strong>
+      <p>Same playbook as wintercreeper: an evergreen mat that climbs trunks and eventually kills trees by weight and shading. The three-lobed leaves are unmistakable. Grown-up trick: cut a vine at waist height and the whole top dies on its own — no climbing required.</p>
+    </div>
+  </article>
+
+  <article class="card pullit">
+    <img src="assets/callery-pear.webp" alt="Callery pear covered in white spring blossom" loading="lazy">
+    <span class="badge pull">Pull it</span>
+    <h3>Callery Pear</h3>
+    <p class="latin">Pyrus calleryana</p>
+    <p class="kid">In spring this tree wears ALL the white flowers, before anyone else. Pretty — but it's a bully tree.</p>
+    <p class="fall">🍂 Fall: tiny hard pears, no bigger than marbles, and thorny twigs.</p>
+    <div class="notes"><strong>Grown-up notes</strong>
+      <p>The wild offspring of Bradford pear. An edge species rather than a deep-woods one — look along the power-line cut and open edges. Spring giveaway: a small tree exploding in white blossom before anything else blooms.</p>
+    </div>
+  </article>
+
+  <article class="card pullit">
+    <img src="assets/nandina.jpg" alt="Nandina with upright clusters of glossy red berries" loading="lazy">
+    <span class="badge pull">Pull it — and don't eat</span>
+    <h3>Nandina (Heavenly Bamboo)</h3>
+    <p class="latin">Nandina domestica</p>
+    <p class="kid">Pretty red berries on a lacy bush. But these berries are POISON. We look — we never, ever eat them.</p>
+    <p class="fall">🍂 Fall &amp; winter: bright red berry clusters stand out for months.</p>
+    <div class="notes"><strong>Grown-up notes</strong>
+      <p>A common yard shrub at the edge of these woods whose berries are toxic — cyanogenic glycosides — to kids, pets and birds in quantity; cedar waxwing deaths are documented. Pull any seedlings that appear along the trail corridor: bird-carried seed is exactly how it gets into woods like these.</p>
+    </div>
+  </article>
+</section>
+
+<!-- ================= MUSHROOMS ================= -->
+<section id="mushrooms">
+  <h2 class="group">🍄 Mushrooms</h2>
+  <p class="group-sub">Wonderful to find, wonderful to photograph — never food. See the rule below.</p>
+
+  <article class="card">
+    <img src="assets/giant-funnel.jpg" alt="Giant funnel mushrooms — very large white funnel-shaped mushrooms in leaf litter" loading="lazy">
+    <h3>Giant Funnel</h3>
+    <p class="latin">Leucopaxillus giganteus (Aspropaxillus giganteus)</p>
+    <p class="kid">A GIANT white mushroom, big as a dinner plate, hiding in the oak leaves! One was found right here. Look with your eyes — not your mouth.</p>
+    <p class="fall">🍂 Fall: pops up in oak leaf litter after rain soaks the leaves.</p>
+    <div class="notes"><strong>Grown-up notes</strong>
+      <p>Confirmed in these woods in November 2026. Very large white cap (4–6 in. and up), crowded gills that run a short way down the stem, and a base knitted into the litter by a cottony white mat — it eats the oak-leaf layer itself. The snap test separated it from its brittle white Russula double: funnel flesh is fibrous and tears; Russula snaps like chalk. It's reported to give some people stomach trouble — a look-don't-eat mushroom here.</p>
+    </div>
+  </article>
+
+  <div class="rule-card">
+    <p class="big">🍄 The mushroom rule: look, don't taste.</p>
+    <p>Every mushroom in the woods is for looking at. Nobody — big or small — eats a wild mushroom from this yard or these woods.</p>
+    <div class="notes" style="margin-top:.7rem"><strong>Grown-up notes</strong>
+      <p>Some local mushrooms are genuinely dangerous, including deadly ones that grow in oak litter here (the destroying angel group). A few harmless and harmful species look nearly identical. The rule for these woods is simple and total: wild mushrooms are for recognition, not for eating.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ANIMAL SIGNS ================= -->
+<section id="animals">
+  <h2 class="group">🐾 Animal Signs</h2>
+  <p class="group-sub">The woods are full of neighbours we mostly hear, or find signs of. Detectives look for clues!</p>
+
+  <article class="card">
+    <img src="assets/raccoon.jpg" alt="Raccoon face with black mask markings" loading="lazy">
+    <img src="assets/raccoon-scat.jpg" alt="Raccoon scat on the trail, packed with flat persimmon seeds" loading="lazy">
+    <h3>Raccoon</h3>
+    <p class="latin">Procyon lotor</p>
+    <p class="kid">A night-time visitor with a robber mask! Its clue: poop full of big flat seeds — that means somebody had a persimmon feast.</p>
+    <p class="fall">🍂 Fall: seed-filled scat appears when the persimmons ripen.</p>
+    <div class="notes"><strong>Grown-up notes</strong>
+      <p>The second photo is the actual clue found on the trail here in November 2026: formed, blunt segments nearly an inch across, packed with persimmon seeds. Coyote was ruled out (their scat is ropey with fur; a fruit-binged coyote makes a sloppy pile), as was dog (the seed load, and no human activity back here). Repeated deposits in one spot make a <em>latrine</em>, which marks a route or feeding spot, not a den — the approach here is to shift a trail a few feet around a latrine rather than through it. <strong>Hygiene:</strong> raccoon scat can carry raccoon roundworm (<em>Baylisascaris</em>) eggs that persist in soil — look, don't touch, and wash hands after trail work near it. Best estimate for this corridor: roughly 6–10 raccoons use it regularly.</p>
+    </div>
+  </article>
+
+  <article class="card">
+    <img src="assets/skunk.jpg" alt="Striped skunk walking through snow" loading="lazy">
+    <h3>Striped Skunk</h3>
+    <p class="latin">Mephitis mephitis</p>
+    <p class="kid">Black with a white stripe — and a super-smelly spray! If you meet one, stop… and walk away slow and quiet.</p>
+    <p class="fall">🍂 Fall: most active at dusk and dawn, digging for grubs.</p>
+    <div class="notes"><strong>Grown-up notes</strong>
+      <p>One has been seen in these woods. Skunks spray reluctantly — the glands take about a week to reload — and they warn first: foot-stomping, hissing, tail up and rear turned toward you. Be audible on the trail at dusk so you never surprise one, and always leave it an escape route. A skunk out in daylight acting disoriented is a rabies caution: keep well away.</p>
+    </div>
+  </article>
+
+  <article class="card">
+    <img src="assets/coyote.jpg" alt="Coyote in profile" loading="lazy">
+    <h3>Coyote</h3>
+    <p class="latin">Canis latrans</p>
+    <p class="kid">We HEAR these neighbours! At night the whole family sings — and five coyotes can sound like twenty!</p>
+    <p class="fall">🍂 Fall: family groups are noisy as young coyotes practice their songs.</p>
+    <div class="notes"><strong>Grown-up notes</strong>
+      <p>Coyotes are heard often around this corridor. Almost certainly one family pack of about 4–6 — a suburban pack's territory runs 2–5 square miles, so these woods are a small corner of it. They rarely catch raccoons anywhere near climbable trees and a creek, which is one reason the raccoon population does fine alongside them.</p>
+    </div>
+  </article>
+
+  <article class="card">
+    <img src="assets/deer.jpg" alt="White-tailed deer buck with antlers" loading="lazy">
+    <h3>White-tailed Deer</h3>
+    <p class="latin">Odocoileus virginianus</p>
+    <p class="kid">Look in the soft creek mud for tracks — two pointy toes, like a tiny heart split in half!</p>
+    <p class="fall">🍂 Fall: bucks carry hard, shiny antlers, and deer move most at dawn and dusk.</p>
+    <div class="notes"><strong>Grown-up notes</strong>
+      <p>Deer are regulars in creek corridors like this one — look for the cloven, heart-shaped tracks in bank mud, oval droppings, and low browse lines on shrubs. A bobcat also likely hunts this corridor from time to time; its round, clawless tracks in creek mud would be the sign to watch for.</p>
+    </div>
+  </article>
+
+  <article class="card">
+    <img src="assets/opossum.jpg" alt="Virginia opossum perched on a branch" loading="lazy">
+    <h3>Virginia Opossum</h3>
+    <p class="latin">Didelphis virginiana</p>
+    <p class="kid">A slow night-walker with a pink nose and a long tail. When it gets scared, it plays sleeping. What a trick!</p>
+    <p class="fall">🍂 Fall: out at night, snuffling through the leaf litter for snacks.</p>
+    <div class="notes"><strong>Grown-up notes</strong>
+      <p>Gentle, slow and nearly harmless — and useful: opossums eat large numbers of ticks. "Playing possum" is an involuntary faint, not a performance. If you find one apparently lifeless, leave it alone; it will likely wake and wander off.</p>
+    </div>
+  </article>
+
+  <article class="card">
+    <img src="assets/armadillo.jpg" alt="Nine-banded armadillo with its bony shell and big ears" loading="lazy">
+    <h3>Nine-banded Armadillo</h3>
+    <p class="latin">Dasypus novemcinctus</p>
+    <p class="kid">A little animal wearing armour, like a tiny knight! Look for its dug-up holes in the dirt.</p>
+    <p class="fall">🍂 Fall: rooting and digging in soft soil for bugs and grubs.</p>
+    <div class="notes"><strong>Grown-up notes</strong>
+      <p>Armadillos announce themselves with conical dig holes and rooted-up litter rather than sightings. Poor eyesight, excellent nose. They can jump straight up when startled — a surprise for the armadillo and everyone else.</p>
+    </div>
+  </article>
+</section>
+
+<!-- ================= TRAIL RULES ================= -->
+<section id="rules">
+  <h2 class="group">🥾 Trail Rules</h2>
+  <p class="group-sub">How we take care of the woods — and how the woods take care of everything living in them.</p>
+
+  <div class="rule-card">
+    <p class="big">1. Stay on the trails</p>
+    <p>We walk on our paths, and the animals get the other 99% of the woods all to themselves.</p>
+  </div>
+  <div class="rule-card">
+    <p class="big">2. Leave logs and sticks where they lie</p>
+    <p>Fallen logs and standing dead trees are houses — for bugs, birds, rabbits and skunks. We walk around them.</p>
+  </div>
+  <div class="rule-card">
+    <p class="big">3. Clues are for eyes, not hands</p>
+    <p>Animal signs like scat: look, take a picture, leave them be — and wash hands when the walk is over.</p>
+  </div>
+  <div class="rule-card">
+    <p class="big">4. Look, don't taste</p>
+    <p>No eating mushrooms or berries in the woods. Ever. Some of them can make people very sick.</p>
+  </div>
+  <div class="rule-card">
+    <p class="big">5. Trash goes out with us</p>
+    <p>If the wind blew litter into the woods, we carry it out. The woods stay clean because we clean them.</p>
+  </div>
+  <div class="rule-card">
+    <p class="big">6. Brush piles are animal houses</p>
+    <p>When grown-ups trim the trail, the sticks get stacked in piles off the path — instant shelter for rabbits, wrens and skunks.</p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <p><strong>Fred Creek Field Guide</strong> — a backyard field guide for young naturalists. Fred Creek corridor, Tulsa, Oklahoma. Made in the fall of 2026.</p>
+  <p>Photo credits: persimmon reference photo via Level Up Garden. Animal and giant-funnel photos via Wikimedia Commons — nandina (CC BY-SA 4.0), giant funnel (CC BY-SA 3.0), raccoon (CC BY-SA 2.5), striped skunk (CC BY 2.0), coyote (CC BY-SA 3.0), white-tailed deer (CC BY-SA 4.0), opossum (CC BY-SA 2.5), nine-banded armadillo (CC BY-SA 4.0). Invasive-plant photos from public conservation sources, as collected November 2026. Remaining photos were taken in these woods in November 2026.</p>
+  <p>This guide is for looking and learning. Never eat any wild plant, berry or mushroom based on a field guide — some look-alikes are dangerous.</p>
+</footer>
+
+</body>
+</html>
