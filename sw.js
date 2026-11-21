@@ -1,10 +1,11 @@
-const CACHE = "fred-creek-v1";
+const CACHE = "fred-creek-v2";
 const ASSETS = [
   ".", "index.html", "manifest.json",
   "icon-192.png", "icon-512.png", "icon-maskable-512.png",
   "assets/amur-honeysuckle.jpg", "assets/armadillo.jpg", "assets/black-cherry.jpg",
   "assets/black-gum.jpg", "assets/callery-pear.webp", "assets/cherry-laurel.jpg",
   "assets/coyote.jpg", "assets/deer.jpg", "assets/english-ivy.webp",
+  "assets/fragrant-sumac.jpg", "assets/poison-ivy.jpg",
   "assets/giant-funnel.jpg", "assets/green-ash.jpg", "assets/japanese-honeysuckle.jpg",
   "assets/nandina.jpg", "assets/opossum.jpg", "assets/persimmon.jpg",
   "assets/privet.jpg", "assets/raccoon-scat.jpg", "assets/raccoon.jpg",
